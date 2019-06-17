@@ -1,0 +1,52 @@
+apiVersion: jenkins.io/v1
+kind: Environment
+metadata:
+  creationTimestamp: null
+  labels:
+    env: dev
+    team: jenkins-x
+  name: dev
+spec:
+  kind: Development
+  label: Development
+  namespace: jenkins-x
+  previewGitInfo:
+    user: {}
+  promotionStrategy: Never
+  source:
+    ref: master
+    url: https://github.com/marcusmaday/environment-soarersly-dev.git
+  teamSettings:
+    appsRepository: https://storage.googleapis.com/chartmuseum.jenkins-x.io
+    buildPackName: kubernetes-workloads
+    buildPackRef: master
+    buildPackUrl: https://github.com/jenkins-x-buildpacks/jenkins-x-kubernetes.git
+    defaultScheduler:
+      kind: ""
+      name: ""
+    dockerRegistryOrg: ci-cd-243316
+    envOrganisation: marcusmaday
+    gitServer: https://github.com
+    helmTemplate: true
+    importMode: YAML
+    kubeProvider: gke
+    pipelineUsername: marcusmaday
+    promotionEngine: Prow
+    prowEngine: Tekton
+    quickstartLocations:
+    - excludes:
+      - WIP-*
+      gitKind: github
+      gitUrl: https://github.com
+      includes:
+      - '*'
+      owner: jenkins-x-quickstarts
+    storageLocations:
+    - bucketUrl: gs://soarersly-lts-62ba1dda-4ff2-4f74-955a-a467a4f69723
+      classifier: default
+    - bucketUrl: gs://soarersly-lts-62ba1dda-4ff2-4f74-955a-a467a4f69723
+      classifier: logs
+    useGitOps: true
+    versionStreamUrl: https://github.com/jenkins-x/jenkins-x-versions.git
+  webHookEngine: Prow
+status: {}

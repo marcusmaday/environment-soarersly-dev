@@ -1,0 +1,35 @@
+apiVersion: v1
+data:
+  ca.crt: |
+    -----BEGIN CERTIFICATE-----
+    MIIDDDCCAfSgAwIBAgIRAOA0Ht8yAxJO2I6TjJNYk8gwDQYJKoZIhvcNAQELBQAw
+    LzEtMCsGA1UEAxMkZWI1YThkMTMtZDM5MS00ZDYzLTljMTUtMzdhYmNkNjdmNGU5
+    MB4XDTE5MDYxNzE4MzIyMFoXDTI0MDYxNTE5MzIyMFowLzEtMCsGA1UEAxMkZWI1
+    YThkMTMtZDM5MS00ZDYzLTljMTUtMzdhYmNkNjdmNGU5MIIBIjANBgkqhkiG9w0B
+    AQEFAAOCAQ8AMIIBCgKCAQEA1v4iRGjSOF50XnzuGQlBhJ5ghM1XV6VNaFfsxg2O
+    CLu5HMz1aKE/viOAE3BKXW6A00IF+slIecI5mN06B+mYZNMxXUs03D9CG284Nxb9
+    +SceHiJDyMDVkasr6sstjNwpWJEhyGCaWe5F5PhI9jYY97fe0a7As2Sx/w8W5khm
+    EzmXXbNpMjm+X8vTpanv4lEbAjv7u1AwZUcdBsWntcynmBNAmMIudfVicmrMeNI2
+    4afHHDHL4j1LRx+AoIoLDyqDZHipeF2EjujUbZydj8K01j55qV7/A8YUpSoCDx1l
+    i5Ua3HusmCFJALqS3g92fdsqX2Bp9TeG4QftSbQTCZp4lQIDAQABoyMwITAOBgNV
+    HQ8BAf8EBAMCAgQwDwYDVR0TAQH/BAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAQEA
+    EaKgwY6ufJyo9Hhti0OCMDVXTdCDqTTfqZADeds5dMVPQ6bdHbMq/rrPJMP+xhZs
+    +bdsL3yj/CQomGeCM31kRMJdj7FHtfra8Jim8mSGrEdS6DQaVsyRmkEhW4RngLwW
+    NTcA3r8K7FWzmYQ4q/LolqnIobRnsGhnhqEsFf+dAKbufVhtdd0fU4V6AKFfmBRY
+    piZYvnnTk6Rqppdikjj0l10xnRX4eHTI1UqaLdvqLdnJQG/RyE5YUmLoqg3t4cDd
+    WcBIk3kv6x8/0RQEzSROvftvS9OXDFb1/FN1kycdQEV6qW8JeuzHrXFQedO7foPO
+    iIojwzVnmKbBxUBN+2gerg==
+    -----END CERTIFICATE-----
+  clusterName: soarersly
+  jx-install-version: 2.0.258
+  kubeProvider: gke
+  projectID: ci-cd-243316
+  region: ""
+  secretsLocation: vault
+  server: https://35.232.157.228
+  systemVaultName: jx-vault-soarersly
+  zone: us-central1-a
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  name: jx-install-config
